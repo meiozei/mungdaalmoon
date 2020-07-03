@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#space {
+    background: url("823503.jpg") no-repeat fixed top;
+    background-size: cover;
+    padding: 20%;
+}
+
+
+.imgfloat1 {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+    display: flex;
+    margin-left: 3vw;
+}
+
+#color1 {
+    color: whitesmoke;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
